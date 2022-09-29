@@ -2,7 +2,7 @@
 
 ## Project Understanding
 ### Background:
-Imagine waiting 20 years to hunt a specific animal; only to get an e-mail showing that you didn't obtain the tag because you didn't look through over 6,000 pages of pdf documents. This situation happens more than you think for Colorado big game hunter.
+Imagine waiting 20 years to hunt in a specific unit; only to get an e-mail showing that you didn't recieve the license because you didn't look through over 6,000 pages of past draw recap statistics. This situation happens more than you think for Colorado big game hunter.
 
 For big game hunting, Colorado uses a preference point system to increase the chances of getting the opportunity to hunt specific units over time. The hunters with the higher preference points have a higher probability of obtaining tags that require a draw than hunters with the fewer preference points. The preference points are specific to species and hunters are able to accumulate a single point per species after unsuccuessfully drawing a tag. In addition, the majority of "trophy" units have a limited number of tags available per hunt code, which is specific to species, region in colorado, time of year, and hunting method.
 
@@ -10,13 +10,11 @@ For big game hunting, Colorado uses a preference point system to increase the ch
 There's currently resources available for an annual fee in order to evaluate oppotunites for drawing specific tags, but the resources lack granularity and implementaion of data science methodologies for predictions and does not showcase usage of inference to prove point creep is occuring.
 
 ### Objective:
-1. Determine which Hunt Codes receives the highest number of applicants.
-2. Determine which Hunt Code receives the high number of tags allocated.
-3. Which Hunt Codes take the most preference points to draw.
+1. Determine which Hunt Codes receive the highest number of applicants.
+2. Determine which Hunt Codes receive the highest number of tags allocated.
+3. Determine Which Hunt Codes take the most preference points to draw.
 4. Explore the "Point Creep" phenominon, which occurs when the number of tags available doesn't meet the demand of applicants and each year the quantity of points it takes to draw the tag increases.
 5. Provide a tool for Colorado big game hunters to quickly visualize the probability of drawing a specific tag based on how many preference points that applicant has for the target species.
-
-### Project Plan
 
 ## Data Understanding
 * Determine the number of data sources
@@ -29,6 +27,16 @@ There's currently resources available for an annual fee in order to evaluate opp
 * Construct Data
 
 ## Exploratory Data Analysis
+### Top 10 Hunt Codes receive the highest number of applicants.
+
+### Top 10 Hunt Codes receive the highest number of tags allocated.
+
+### Top 10 Hunt Codes that take the most preference points to draw
+
+### Evaluate the Top 10 Hunt Code that take the most preference points to draw for point creep
+The "Point Creep" phenominon, which occurs when the number of tags available doesn't meet the demand of applicants and each year the quantity of points it takes to draw the tag increases.
+
+### Provide a tool for Colorado big game hunters to quickly visualize the probability of drawing a specific tag
 
 ## Modeling
 * Select Modeling Techniques
@@ -37,7 +45,7 @@ There's currently resources available for an annual fee in order to evaluate opp
 * Assess Model
 
 ## Project Evaluation
-* Evaluate REsults
+* Evaluate Results
 * Review PRocess
 * Determine Next Steps
 
