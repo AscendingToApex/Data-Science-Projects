@@ -80,6 +80,20 @@ EM041O1R|6000
 EM003O1R|5527
 EE012O1A|5050
 
+## Top 10 Hunt Codes that take the most preference points to draw for adult residents in 2022
+Hunt Code| Minimum Preference Points
+--|--
+EE010W1R|30
+EE084W1R|28
+EE040W1R|27
+EE851W1R|27
+EE085W1R|26
+EE851W2R|26
+EE023W1R|23
+EE104W1R|23
+EM002O1M|23
+EE084W2R|22
+
 ## Evaluate Hunt Codes for Point Creep
 The "Point Creep" phenominon, which occurs when the number of tags available doesn't meet the demand of applicants and each year the quantity of points it takes to draw the tag increases.
 
