@@ -97,6 +97,19 @@ EE084W2R|22
 ## Evaluate Hunt Codes for Point Creep
 The "Point Creep" phenominon, which occurs when the number of tags available doesn't meet the demand of applicants and each year the quantity of points it takes to draw the tag increases.
 
+The following hunt codes have increased the minimum points required to draw in five out of the last seven years.
+
+Hunt Code|Qty of Years Min Points Required  to Draw Increased
+--|--
+EE040W1R|6
+EE011W2R|5
+EM010O1M|5
+EE003W1R|5
+EE023W1R|5
+EM076E1R|5
+EE084W1R|5
+
+
 ## Modeling
 * Select Modeling Techniques
 * Generate Test Design
