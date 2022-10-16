@@ -71,12 +71,12 @@ The Colorado Division of Wildlife current has the following Hunt Codes on the Hy
 ### Number of data sources:
 - [Colorado Parks & Wildlife - Elk Hunting Statistics](https://cpw.state.co.us/thingstodo/Pages/Statistics-Elk.aspx)
 
-### Collecting inital Data:
-- [Data Collection Code](https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/Data-Collection/Elk/Data-Collection-CO-Elk.ipynb)
+### [Collecting Inital Data](https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/1-Data-Understanding/Collecting-Initial-Data/Elk/Data-Collection-CO-Elk.ipynb)
 
 ### Describe Data
 
-### Explore Data
+### [Explore Data](https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/1-Data-Understanding/Exploring-Data/Elk/Data-Exploration-CO-Elk.ipynb)
+
 #### Top 20 Most Difficult Elk Hunt Codes to Obtain a License for based on 2015-2022 CPW Draw Recap Data
 
 Hunt Code|Total Tags|Total Applications|Supply-Demand Ratio
@@ -148,11 +148,12 @@ EE084W2R|22
 
 # Data Preparation
 ### Plan for Project Phase:
-- [Data Preparation Code](https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/Data-Preparation/Elk/Data-Preparation-CO-Elk.ipynb)
+
 ### Tools Used
 - Python Packages: pandas and os
 
-# Exploratory Data Analysis
+# [Exploratory Data Analysis]((https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/Data-Preparation/Elk/Data-Preparation-CO-Elk.ipynb))
+
 ### Plan for Exploratory Data Analysis Phase
 ### Tools Used:
 - Python packages:
