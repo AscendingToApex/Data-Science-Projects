@@ -1,8 +1,8 @@
 # Project Name Here
 
 # Project Understanding
-### Plan for Project Phase
-### Tools Used
+### Plan for Project Understanding Phase
+### Tools Used in Phase:
 ### Background:
 Enter background information here
 
@@ -11,7 +11,7 @@ Enter background information here
 - Standard Report: What is happening?
 - AD HOC Report: How many, how often, where?
 ### Explore
-- Query Drilldown: Where excatly is the problem?
+- Query Drilldown: Where exactly is the problem?
 - Visualization: What does the problem space look like?
 - Clustering: What patterns or groupings can be found in my data
 ### Explain
@@ -65,7 +65,7 @@ Describe data here
 
 ### Explore Data
 
-### Verify Data Qualifty
+### Verify Data Quality
 
 # Data Preparation
 ### Plan for Project Phase
