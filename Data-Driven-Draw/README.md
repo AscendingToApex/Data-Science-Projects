@@ -3,11 +3,11 @@
 # Project Understanding
 
 ## Background:
-For big game hunting, Colorado uses a preference point system to increase the chances of getting the opportunity to hunt specific units over time. The hunters with the higher preference points have a higher probability of obtaining tags that require a draw than hunters with the fewer preference points. The preference points are specific to species and hunters are able to accumulate a single point per species after unsuccuessfully drawing a tag. In addition, the majority of "trophy" units have a limited number of tags available per hunt code, which is specific to species, region in colorado, time of year, and hunting method.
+For big game hunting, Colorado uses a preference point system to increase the chances of getting the opportunity to hunt specific units over time. The hunters with the higher preference points have a higher probability of obtaining tags that require a draw than hunters with the fewer preference points. The preference points are specific to species and hunters are able to accumulate a single point per species after unsuccuessfully drawing a tag. In addition, the majority of "trophy" units have a limited number of tags available per hunt code, which is specific to species, region in Colorado, time of year, and hunting method.
 
 One of the issues with the current preference point methodology is "Point Creep". The "Point Creep" phenominon occurs when the number of tags available doesn't meet the demand of applicants and each year the quantity of points required to draw the tag increases. To expand quality opportunities to big-game hunters in highly coveted "Point Creep" areas, Colorado Parks & Wildlife Commission offers a "hybrid" drawing for up to 20% of select elk, deer, pronghorn and bear licenses. The purpose of the hybrid draw is to give hunters additional opportunity to draw a licence for some of the state's premier deer, elk, pronghorn and bear hunting areas. Hunters who normally would not have enough preference points to draw thses licenses now have a slight change to draw a small number of the most coveted liceses through this process.
 
-The licenses available for hybrid drawas of 2022 were based on a 3-year average ending with the 2009 drawing. This project performs an updated analysis of "Point Creep" of elk licenses in Colorado in order to present the results to the Colorado Division of Wildlife with hopes of expanding the available list of hybrid draw hunt codes.
+The licenses available for hybrid draw, as of 2022, were based on a 3-year average ending with the 2009 drawing. This project performs an updated analysis of "Point Creep" of elk licenses in Colorado in order to present the results to the Colorado Division of Wildlife with hopes of expanding the available list of hybrid draw hunt codes.
 
 ## Objective:
 ### Describe
@@ -39,9 +39,8 @@ The Colorado Division of Wildlife current has the following Hunt Codes on the Hy
 |E-E-010-O1-A|
 
 # Data Understanding
-### Tools Used
+## Tools Used
 - Python Packages: 
-    - pandas
     - requests
     - BeautifulSoup
     - pdfplumber
@@ -49,18 +48,55 @@ The Colorado Division of Wildlife current has the following Hunt Codes on the Hy
     - os
     - shutil
     - StringIO
+    - pandas
 
-### Number of data sources:
-- Eight pdf documents that are nearly 1000 pages in length with a semistructured format
+## Number of data sources:
+- Eight PDF documents, which are nearly 1000 pages in length with a semistructured format
 - [Colorado Parks & Wildlife - Elk Hunting Statistics](https://cpw.state.co.us/thingstodo/Pages/Statistics-Elk.aspx)
 
-### Collecting Inital Data
+## Collecting Inital Data
+- Webscrapping the Colorado Parks & Wildlife website to get URLs for the PDFs that contain the applicant and draw data, then pdf scrapping over 7,500 PDF pages to obtain the historical applicant and draw data in a usable format.
 - [Data Engineering Code](https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/1-Data-Understanding/Collecting-Initial-Data/Elk/Data-Collection-CO-Elk.ipynb)
 
-### Describe Data
+## Describe Data
+The collected data is comprised of an Excel workbook with Applicant and Draw data for each year between 2015 and 2022. 
+Each Applicant workbook is comprised of the following data:
+- Index
+- Number of Preference Points
+- Quantity of Adult Resident Applicants
+- Quantity of Adult Non-Resident Appliants
+- Quantity of Youth Resident Applicants
+- Quantity of Youth Non-Resident Applicants
+- Quantity of Landowner Permits (Unrestricted)
+- Quantity of Landowner Permits (Restricted)
+- Choice
+- Hunt Code
+- Year
+- Primary Key (Concatination of Hunt Code-Year-Preference Point)
 
+Each Draw workbook is comprised of the following data:
+- Index
+- Number of Preference Points
+- Quantity of Adult Resident Applicants that succussfully drew
+- Quantity of Adult Non-Resident Appliants that succussfully drew
+- Quantity of Youth Resident Applicants that succussfully drew
+- Quantity of Youth Non-Resident Applicants that succussfully drew
+- Quantity of Landowner Permits (Unrestricted) Applicants that succussfully drew
+- Quantity of Landowner Permits (Restricted) Applicants that succussfully drew
+- Choice
+- Hunt Code
+- Year
+- Primary Key (Concatination of Hunt Code-Year-Preference Point)
 
-### [Explore Data](https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/1-Data-Understanding/Exploring-Data/Elk/Data-Exploration-CO-Elk.ipynb)
+## Explore Data
+- How many rows and columns
+- Number of variables and data types
+- Categorize values as one of the following:
+    - Categorical: Have a set number of values
+    - Continuous: Have an infiite number of values
+    - Have a set number of values that are numeric
+
+- [Data Exploration Code](https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/1-Data-Understanding/Exploring-Data/Elk/Data-Exploration-CO-Elk.ipynb)
 
 #### Top 20 Most Difficult Elk Hunt Codes to Obtain a License for based on 2015-2022 CPW Draw Recap Data
 
@@ -130,6 +166,7 @@ EM002O1M|23
 EE084W2R|22
 
 ### Verify Data Quality
+- Find any missing values
 
 # Data Preparation
 ### Plan for Project Phase:
