@@ -63,9 +63,16 @@ Keep in mind Tom Khabaza's Nine Laws of Data Mining
 ### Describe Data
 Describe data here
 
-### Explore Data
+### Explore Date
+- How many rows and columns
+- Number of variables and data types
+- Categorize values as one of the following:
+    - Categorical: Have a set number of values
+    - Continuous: Have an infiite number of values
+    - Descrete: Have a set number of values that are numeric
 
 ### Verify Data Quality
+- Find any missing values
 
 # Data Preparation
 ### Plan for Project Phase
@@ -77,6 +84,14 @@ The data preparation process includes selecting, cleaning, constructing, integra
 ### Plan for Project Phase
 ### Tools Used
 ### Objective to be answered
+- Variable identification: define each variable and its role in the dataset 
+- Univariate analysis: for continuous variables, build box plots or - histograms for each variable independently; for categorical variables, build bar charts to show the frequencies
+- Bi-variable analysis - determine the interaction between variables by building visualization tools
+- Continuous and Continuous: scatter plots
+- Categorical and Categorical: stacked column chart
+-Categorical and Continuous: boxplots combined with swarmplots
+- Detect and treat missing values
+- Detect and treat outliers
 
 Put result of objective here
 

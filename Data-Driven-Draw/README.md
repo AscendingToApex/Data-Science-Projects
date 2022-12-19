@@ -62,41 +62,43 @@ The Colorado Division of Wildlife current has the following Hunt Codes on the Hy
 The collected data is comprised of an Excel workbook with Applicant and Draw data for each year between 2015 and 2022. 
 Each Applicant workbook is comprised of the following data:
 - Index
-- Number of Preference Points
-- Quantity of Adult Resident Applicants
-- Quantity of Adult Non-Resident Appliants
-- Quantity of Youth Resident Applicants
-- Quantity of Youth Non-Resident Applicants
-- Quantity of Landowner Permits (Unrestricted)
-- Quantity of Landowner Permits (Restricted)
-- Choice
-- Hunt Code
-- Year
+- Number of Preference Points (Discrete)
+- Quantity of Adult Resident Applicants (Continuous)
+- Quantity of Adult Non-Resident Appliants (Continuous)
+- Quantity of Youth Resident Applicants (Continuous)
+- Quantity of Youth Non-Resident Applicants (Continuous)
+- Quantity of Landowner Permits - Unrestricted (Continuous)
+- Quantity of Landowner Permits - Restricted (Continuous)
+- Choice (Discrete)
+- Hunt Code (Categorical)
+- Year (Discrete)
 - Primary Key (Concatination of Hunt Code-Year-Preference Point)
 
 Each Draw workbook is comprised of the following data:
 - Index
-- Number of Preference Points
-- Quantity of Adult Resident Applicants that succussfully drew
-- Quantity of Adult Non-Resident Appliants that succussfully drew
-- Quantity of Youth Resident Applicants that succussfully drew
-- Quantity of Youth Non-Resident Applicants that succussfully drew
-- Quantity of Landowner Permits (Unrestricted) Applicants that succussfully drew
-- Quantity of Landowner Permits (Restricted) Applicants that succussfully drew
-- Choice
-- Hunt Code
-- Year
+- Number of Preference Points (Discrete)
+- Quantity of Adult Resident Applicants that succussfully drew (Continuous)
+- Quantity of Adult Non-Resident Appliants that succussfully drew (Continuous)
+- Quantity of Youth Resident Applicants that succussfully drew (Continuous)
+- Quantity of Youth Non-Resident Applicants that succussfully drew (Continuous)
+- Quantity of Landowner Permits - Unrestricted Applicants that succussfully drew (Continuous)
+- Quantity of Landowner Permits - Restricted Applicants that succussfully drew (Continuous)
+- Choice (Discrete)
+- Hunt Code (Categorical)
+- Year (Discrete)
 - Primary Key (Concatination of Hunt Code-Year-Preference Point)
 
-## Explore Data
-- How many rows and columns
-- Number of variables and data types
-- Categorize values as one of the following:
-    - Categorical: Have a set number of values
-    - Continuous: Have an infiite number of values
-    - Have a set number of values that are numeric
+# Data Preparation
+## Verify Data Quality
+- Find any missing values
 
-- [Data Exploration Code](https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/1-Data-Understanding/Exploring-Data/Elk/Data-Exploration-CO-Elk.ipynb)
+### Tools Used
+- Python Packages: pandas and os
+
+# [Exploratory Data Analysis]((https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/Data-Preparation/Elk/Data-Preparation-CO-Elk.ipynb))
+
+### Tools Used
+- Python Packages: pandas and os
 
 #### Top 20 Most Difficult Elk Hunt Codes to Obtain a License for based on 2015-2022 CPW Draw Recap Data
 
@@ -164,21 +166,6 @@ EE023W1R|23
 EE104W1R|23
 EM002O1M|23
 EE084W2R|22
-
-### Verify Data Quality
-- Find any missing values
-
-# Data Preparation
-### Plan for Project Phase:
-
-### Tools Used
-- Python Packages: pandas and os
-
-# [Exploratory Data Analysis]((https://github.com/AscendingToApex/Data-Science-Projects/blob/Production/Data-Driven-Draw/Data-Preparation/Elk/Data-Preparation-CO-Elk.ipynb))
-
-### Plan for Exploratory Data Analysis Phase
-### Tools Used:
-- Python packages:
 
 ### Is point creep occuring on hunt codes that are not currently on the hybrid draw list?
 Point creep is currently occuring on X amount of units based on an increase in the minimum points required to draw in three out of the last seven years
